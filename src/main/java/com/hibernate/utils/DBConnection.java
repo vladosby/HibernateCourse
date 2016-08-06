@@ -29,6 +29,15 @@ public class DBConnection {
         }
     }
 
+    public static <T> T getObjectById(Class<T> clazz, int id) {
+        try (Session session = sessionFactory.openSession()) {
+            session.beginTransaction();
+            T t = session.get(clazz, id);
+            session.getTransaction().commit();
+            return t;
+        }
+    }
+
     public static void closeSessionFactory() {
         if (sessionFactory != null) {
             sessionFactory.close();
