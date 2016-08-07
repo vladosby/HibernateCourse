@@ -11,6 +11,7 @@ import java.util.Date;
 @Table(name = "users")
 public class User {
     @Id
+    @GeneratedValue
     private int id;
     private String name;
     @Column(name = "SECOND_NAME")

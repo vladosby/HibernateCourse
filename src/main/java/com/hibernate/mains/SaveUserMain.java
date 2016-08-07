@@ -11,7 +11,6 @@ import java.util.Date;
 public class SaveUserMain {
     public static void main(String[] args) {
         User user = new User();
-        user.setId(1);
         user.setName("Name1");
         user.setSurname("Surname1");
         user.setDate(new Date());
