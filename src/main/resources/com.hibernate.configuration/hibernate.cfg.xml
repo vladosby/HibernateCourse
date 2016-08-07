@@ -24,9 +24,11 @@
         <property name="show_sql">true</property>
 
         <!-- Drop and re-create the database schema on startup -->
-        <property name="hbm2ddl.auto">update</property>
+        <property name="hbm2ddl.auto">create</property>
         <!--<mapping resource="org/hibernate/tutorial/domain/Event.hbm.xml"/>-->
         <mapping class="com.hibernate.entities.User"/>
         <mapping class="com.hibernate.entities.UserWithAddress"/>
+        <mapping class="com.hibernate.entities.UserOneToOne"/>
+        <mapping class="com.hibernate.entities.VehicleOneToOne"/>
     </session-factory>
 </hibernate-configuration>
