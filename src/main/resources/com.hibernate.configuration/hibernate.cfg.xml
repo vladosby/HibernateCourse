@@ -32,5 +32,7 @@
         <mapping class="com.hibernate.entities.VehicleOneToOne"/>
         <mapping class="com.hibernate.entities.UserOneToMany"/>
         <mapping class="com.hibernate.entities.VehicleManyToOne"/>
+        <mapping class="com.hibernate.entities.UserManyToMany"/>
+        <mapping class="com.hibernate.entities.VehicleManyToMany"/>
     </session-factory>
 </hibernate-configuration>
