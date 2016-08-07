@@ -37,5 +37,8 @@
         <mapping class="com.hibernate.entities.VehicleST"/>
         <mapping class="com.hibernate.entities.CarST"/>
         <mapping class="com.hibernate.entities.BikeST"/>
+        <mapping class="com.hibernate.entities.VehicleTPC"/>
+        <mapping class="com.hibernate.entities.CarTPC"/>
+        <mapping class="com.hibernate.entities.BikeTPC"/>
     </session-factory>
 </hibernate-configuration>
