@@ -15,7 +15,7 @@ public class UserManyToMany {
     private int id;
     private String name;
 
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
     @JoinTable(joinColumns = @JoinColumn(name="USER_ID"),
         inverseJoinColumns = @JoinColumn(name = "VEHICLE_ID"),
             name = "USER_VEHICLE"

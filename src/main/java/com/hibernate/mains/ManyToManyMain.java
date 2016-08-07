@@ -27,8 +27,8 @@ public class ManyToManyMain {
 
         try (Session session = DBConnection.getSession()) {
             session.beginTransaction();
-            session.save(user1);
-            session.save(user2);
+            session.persist(user1);
+            session.persist(user2);
             session.getTransaction().commit();
         }
 
