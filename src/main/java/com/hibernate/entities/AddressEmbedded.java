@@ -1,5 +1,6 @@
 package com.hibernate.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import javax.persistence.Embedded;
 
@@ -10,6 +11,7 @@ import javax.persistence.Embedded;
 @Embeddable
 public class AddressEmbedded {
     private String street;
+    @Column(name = "BUILD_NUMBER")
     private String building;
 
     public String getStreet() {

@@ -15,6 +15,9 @@ public class UserWithAddress {
 
     private String name;
 
+    @AttributeOverrides({
+            @AttributeOverride(name = "street", column = @Column(name = "STREET_NAME"))
+    })
     private AddressEmbedded address;
 
     public int getId() {
