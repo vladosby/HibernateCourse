@@ -40,5 +40,8 @@
         <mapping class="com.hibernate.entities.VehicleTPC"/>
         <mapping class="com.hibernate.entities.CarTPC"/>
         <mapping class="com.hibernate.entities.BikeTPC"/>
+        <mapping class="com.hibernate.entities.VehicleJS"/>
+        <mapping class="com.hibernate.entities.CarJS"/>
+        <mapping class="com.hibernate.entities.BikeJS"/>
     </session-factory>
 </hibernate-configuration>
