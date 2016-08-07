@@ -27,5 +27,6 @@
         <property name="hbm2ddl.auto">update</property>
         <!--<mapping resource="org/hibernate/tutorial/domain/Event.hbm.xml"/>-->
         <mapping class="com.hibernate.entities.User"/>
+        <mapping class="com.hibernate.entities.UserWithAddress"/>
     </session-factory>
 </hibernate-configuration>
